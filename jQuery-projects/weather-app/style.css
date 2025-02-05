@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.search-box {
+    margin: 20px 0px;
+}
+
+#city {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.5s
+}
+#search-btn:hover {
+    transform: scale(1.2);
+}
+
+/* 날씨 정보 스타일 */
+.weather-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.weather-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error-message {
+    margin-top: 20px;
+    color: red;
+    display: none;
+}
+
+.loading {
+    display: none;
+    font-size: 18px;
+    color: #4CAF50;
+    font-weight: bold;
+}
