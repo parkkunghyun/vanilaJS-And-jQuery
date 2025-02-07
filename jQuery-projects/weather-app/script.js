@@ -4,7 +4,7 @@ $(document).ready(function() {
     // 검색 버튼 클릭 시
     $('#search-btn').on('click', function() {
         const city = $('#city').val().trim();
-        
+
         if (city === '') {
             $('#error-message').text('도시 이름을 입력해주세요.').show();
             $('#weather-info').empty();
@@ -22,7 +22,7 @@ $(document).ready(function() {
             method: 'GET',
             success: function(response) {
                 $('#loading').hide();
-                
+
                 const weather = response.weather[0].description;
                 const temp = response.main.temp;
                 const cityName = response.name;
